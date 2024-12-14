@@ -1,12 +1,12 @@
 ﻿using Bogus;
 
-namespace SampleGraphQL.Schema
+namespace SampleGraphQL.Schema.Queries
 {
     public class Query
     {
         public List<Student> GetStudents()
         {
-            var faker = new Bogus.Faker<Student>();
+            var faker = new Faker<Student>();
             var schema = faker.RuleSet("test", (settings) =>
             {
                 settings.RuleFor(u => u.FirstName, (f, u) => f.Person.FirstName);

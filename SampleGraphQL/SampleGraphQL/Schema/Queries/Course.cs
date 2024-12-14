@@ -1,4 +1,4 @@
-﻿namespace SampleGraphQL.Schema
+﻿namespace SampleGraphQL.Schema.Queries
 {
     public class Course
     {
